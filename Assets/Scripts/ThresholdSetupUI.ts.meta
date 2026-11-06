@@ -1,0 +1,68 @@
+- !<AssetImportMetadata/1bb97288-1de1-42c7-9a07-6654d74f8c98>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> c926c331-c5eb-4dac-9909-f560eb67ab88
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> c926c331-c5eb-4dac-9909-f560eb67ab88
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 27340500-5f32-4e69-ba78-958fe98818fa
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/27340500-5f32-4e69-ba78-958fe98818fa>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 09aa15a6-c40e-4512-93e1-e208462e7b56
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    collapsedOffsetCm: false
+    cueController: false
+    doorwaysRoot: false
+    panelHeightCm: false
+    panelWidthCm: false
+    textColor: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - cueController: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      doorwaysRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      panelWidthCm: !<float> 32.000000
+      panelHeightCm: !<float> 28.000000
+      collapsedOffsetCm: !<Vec3> {x: 30.000000, y: -25.000000, z: 0.000000}
+      textColor: !<Vec3> {x: 0.950000, y: 0.970000, z: 1.000000}
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">ThresholdSetupUI – physio setup panel</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input AssignableType_1 cueController {"hint":"Receives marked doorways and slider values"}'
+    - '// @input SceneObject doorwaysRoot {"hint":"Parent of the Doorway components (searched recursively)"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float panelWidthCm = 32 {"hint":"Panel width, cm", "widget":"slider", "min":24, "max":48, "step":1}'
+    - '// @input float panelHeightCm = 28 {"hint":"Panel height, cm", "widget":"slider", "min":20, "max":40, "step":1}'
+    - "// @input vec3 collapsedOffsetCm = {20,-12,0} {\"hint\":\"Collapsed Setup button position relative to this object, cm (inside the 37 degree display, out of the walker's way)\"}"
+    - '// @input vec3 textColor = {0.95,0.97,1} {"hint":"Text colour (light; the display is additive)", "widget":"color"}'
+    - '// @ui {"widget":"group_end"}'

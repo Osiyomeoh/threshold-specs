@@ -1,0 +1,25 @@
+# BEGIN Lens Studio managed Agents-Docs block
+.mcp.json
+.cursor/mcp.json
+.vscode/mcp.json
+.codex/config.toml
+.claude/settings.local.json
+# END Lens Studio managed Agents-Docs block
+
+# Private signing key: never commit
+spk_debug_key.pem
+*.pem
+# VirtualScene read dump (generated)
+.virtual-scene.json
+
+# Added by Lens Studio (LEAF plugin)
+leaf_plugin_settings.json
+
+# Generated or local Lens Studio state (regenerated when the project opens)
+Cache/
+Workspaces/
+PluginsUserPreferences/
+Support/
+*.esproj.*.lock
+
+.DS_Store

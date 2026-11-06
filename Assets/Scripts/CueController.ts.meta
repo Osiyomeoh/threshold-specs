@@ -1,0 +1,107 @@
+- !<AssetImportMetadata/f12969f2-08b9-44a8-b1d8-914cd3e32288>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> c49047f0-0b7d-4114-b8cb-cb119e0d282f
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> c49047f0-0b7d-4114-b8cb-cb119e0d282f
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 2255afe6-efbd-4a14-8be5-5f8cf01b6a36
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/2255afe6-efbd-4a14-8be5-5f8cf01b6a36>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 8da7c54f-57b8-453a-826e-9336ef1ab9cc
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    beatAudio: false
+    beatBpm: false
+    beatVolume: false
+    camera: false
+    chevronColor: false
+    chevronRoot: false
+    chevronText: false
+    cueLinesRoot: false
+    debugLogs: false
+    doorwaysRoot: false
+    firstLineDistanceCm: false
+    lineColor: false
+    lineSpacingCm: false
+    minFloorDropCm: false
+    nominalEyeHeightCm: false
+    previewOnlyRoot: false
+    probeIntervalS: false
+    probeLengthCm: false
+    verticalFovDeg: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - camera: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      doorwaysRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      cueLinesRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      beatAudio: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      chevronRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      chevronText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      previewOnlyRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      lineSpacingCm: !<float> 50.000000
+      beatBpm: !<float> 90.000000
+      firstLineDistanceCm: !<float> 250.000000
+      lineColor: !<Vec3> {x: 0.000000, y: 1.000000, z: 1.000000}
+      chevronColor: !<Vec3> {x: 0.920000, y: 0.960000, z: 1.000000}
+      beatVolume: 0.600000
+      verticalFovDeg: !<float> 37.000000
+      nominalEyeHeightCm: !<float> 150.000000
+      probeIntervalS: 0.200000
+      probeLengthCm: !<float> 600.000000
+      minFloorDropCm: !<float> 50.000000
+      debugLogs: true
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">CueController – Threshold cue (lines, beat, chevron)</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input SceneObject camera {"hint":"Camera SceneObject; its world position and view direction are sampled every frame"}'
+    - '// @input SceneObject doorwaysRoot {"hint":"Parent of the Doorway components (searched recursively)"}'
+    - '// @input SceneObject cueLinesRoot {"hint":"Parent of the floor lines; child 0 is the farthest line"}'
+    - '// @input Component.AudioComponent beatAudio {"hint":"Tick sound; played once per beat as spatial sound from the marked doorway"}'
+    - '// @input SceneObject chevronRoot {"hint":"Look-down chevron root (bars + text), built facing +Z"}'
+    - "// @input Component.Text chevronText {\"hint\":\"The chevron's LOOK DOWN text\"}"
+    - '// @input SceneObject previewOnlyRoot {"hint":"Preview-only stand-in room; disabled on device"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float lineSpacingCm = 40 {"hint":"Distance between lines, cm (setup panel slider)", "widget":"slider", "min":20, "max":80, "step":5}'
+    - '// @input float beatBpm = 90 {"hint":"Beat speed, BPM (setup panel slider)", "widget":"slider", "min":60, "max":120, "step":1}'
+    - '// @input float firstLineDistanceCm = 250 {"hint":"Distance from the cue-start point to the farthest line, cm (setup panel slider)", "widget":"slider", "min":100, "max":350, "step":10}'
+    - '// @input vec3 lineColor = {0,1,1} {"hint":"Line colour", "widget":"color"}'
+    - '// @input vec3 chevronColor = {0.92,0.96,1} {"hint":"Chevron and text colour (light; the display is additive)", "widget":"color"}'
+    - '// @input float beatVolume = 0.6 {"hint":"Beat volume (constant; it only fades out)", "widget":"slider", "min":0.05, "max":1, "step":0.05}'
+    - "// @input float verticalFovDeg = 37 {\"hint\":\"Display height used for 'farthest line in view', degrees (SPECS ~37)\", \"widget\":\"slider\", \"min\":20, \"max\":60, \"step\":0.5}"
+    - '// @input float nominalEyeHeightCm = 150 {"hint":"Eye height assumed when no floor is detected, cm"}'
+    - '// @input float probeIntervalS = 0.2 {"hint":"Seconds between floor probe rays"}'
+    - '// @input float probeLengthCm = 600 {"hint":"Floor probe ray length, cm"}'
+    - '// @input float minFloorDropCm = 50 {"hint":"A floor hit must be at least this far below the eyes, cm"}'
+    - '// @input bool debugLogs {"hint":"Print state changes (never positions)"}'
+    - '// @ui {"widget":"group_end"}'
