@@ -1,3 +1,22 @@
+# Shipped by Lens Studio
+
+# The lines below are automatically generated and updated by Lens Studio.
+# Please do not modify them manually, as changes will be overwritten each time!
+# If you want to make changes to this file, please put them either above or below this section.
+
+Cache/**
+PluginsUserPreferences/**
+Support/**
+BackUp/**
+Workspaces/**
+.vscode/**
+/jsconfig.json
+/tsconfig.json
+.DS_Store
+/spk_debug_key.pem
+*.lock
+
+# Shipped by Lens Studio
 # BEGIN Lens Studio managed Agents-Docs block
 .mcp.json
 .cursor/mcp.json
@@ -23,3 +42,16 @@ Support/
 *.esproj.*.lock
 
 .DS_Store
+
+# Local agent tooling and template extras: not part of the Lens
+AGENTS.md
+CLAUDE.md
+SPIKE-RESULT.md
+skills-lock.json
+agent/
+.claude/
+.codex/
+.cursor/
+Plugins/
+Packages/Bitmoji 3D.lsc*
+.gitattributes

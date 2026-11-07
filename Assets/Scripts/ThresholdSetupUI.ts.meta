@@ -62,7 +62,7 @@
     - '// @ui {"widget":"separator"}'
     - '// @ui {"widget":"group_start", "label":"Settings"}'
     - '// @input float panelWidthCm = 32 {"hint":"Panel width, cm", "widget":"slider", "min":24, "max":48, "step":1}'
-    - '// @input float panelHeightCm = 28 {"hint":"Panel height, cm", "widget":"slider", "min":20, "max":40, "step":1}'
-    - "// @input vec3 collapsedOffsetCm = {20,-12,0} {\"hint\":\"Collapsed Setup button position relative to this object, cm (inside the 37 degree display, out of the walker's way)\"}"
+    - '// @input float panelHeightCm = 38 {"hint":"Panel height, cm", "widget":"slider", "min":20, "max":40, "step":1}'
+    - "// @input vec3 collapsedOffsetCm = {20,-17,0} {\"hint\":\"Collapsed Setup button position relative to this object, cm (inside the 37 degree display, out of the walker's way)\"}"
     - '// @input vec3 textColor = {0.95,0.97,1} {"hint":"Text colour (light; the display is additive)", "widget":"color"}'
     - '// @ui {"widget":"group_end"}'

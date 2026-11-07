@@ -1,5 +1,0 @@
-{
-  "name": "Icon Atlas",
-  "main": "main.js",
-  "permissions": ["filesystem"]
-}

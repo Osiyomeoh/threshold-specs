@@ -4,6 +4,8 @@ A Lens for Snap Specs. Someone living with Parkinson's stops at a doorway that h
 
 **A cueing aid to try with your physio; not a medical device.**
 
+**Demo video (2:40):** https://youtu.be/D0Uo5_ValxE. It includes an uncut recording of the Lens in the Lens Studio preview.
+
 Built for Learn AR with SPECS (Devpost). The design brief is in [`devpost/design-brief.md`](devpost/design-brief.md).
 
 ## Try it in 1 minute (Lens Studio preview)
